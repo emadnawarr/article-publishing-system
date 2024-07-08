@@ -1,0 +1,52 @@
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    numOfArticles INT DEFAULT 0
+);
+
+CREATE TABLE articles (
+	id INT AUTO_iNCREMENT PRIMARY KEY,
+    title VARCHAR(100) NOT NULL,
+    summary VARCHAR(1000) NOT NULL,
+    body TEXT NOT NULL,
+    viewers INT DEFAULT 0,
+    likes INT DEFAULT 0,
+    published_by INT,
+    published_on DATE,
+    FOREIGN KEY (published_by) REFERENCES users(id) ON DELETE CASCADE
+    );
+    
+    
+CREATE TABLE tags (
+    `name` VARCHAR(50) NOT NULL UNIQUE PRIMARY KEY,
+    visited INT DEFAULT 0
+);
+
+CREATE TABLE article_tags (
+    article_id INT,
+    tag_name VARCHAR(50),
+    PRIMARY KEY (article_id, tag_name),
+    FOREIGN KEY (article_id) REFERENCES articles(id) ON DELETE CASCADE,
+    FOREIGN KEY (tag_name) REFERENCES tags(`name`)
+);
+
+CREATE TABLE followers (
+    follower_id INT,
+    followed_id INT,
+    PRIMARY KEY (follower_id, followed_id),
+    FOREIGN KEY (follower_id) REFERENCES users(id) ON DELETE CASCADE,
+    FOREIGN KEY (followed_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+
+CREATE TABLE tag_followers (
+    user_id INT,
+    tag_name VARCHAR(50),
+    PRIMARY KEY (user_id, tag_name),
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+    FOREIGN KEY (tag_name) REFERENCES tags(`name`) ON DELETE CASCADE
+);
+
+    

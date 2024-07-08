@@ -1,0 +1,1095 @@
+{
+	"info": {
+		"_postman_id": "10a56737-3908-4deb-b8dd-f5097a36be32",
+		"name": "Blogging System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28753463"
+	},
+	"item": [
+		{
+			"name": "Sign Up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Youssef Nawar",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "youssef@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "youssefnawar123!",
+							"type": "text"
+						},
+						{
+							"key": "confirmPassword",
+							"value": "youssefnawar123!",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Sign Up Youssef",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Youssef Nawar",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "youssef@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "youssefnawar123!",
+									"type": "text"
+								},
+								{
+									"key": "confirmPassword",
+									"value": "youssefnawar123!",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"signup"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "57"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"39-zh4dBfnJaOkgEfFN2A7yrqbKlao\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Jul 2024 02:38:48 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"User successfully registered\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "email@yahoo.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "emadnawar123!",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Youssef signs in",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "youssef@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "youssefnawar123!",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "179"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b3-1acoLs6BUlnQR9dzHwsmpWl2e+A\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Jul 2024 02:41:14 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"result\": [\n        {\n            \"id\": 3,\n            \"name\": \"Youssef Nawar\",\n            \"email\": \"youssef@gmail.com\",\n            \"password\": \"youssefnawar123!\",\n            \"numOfArticles\": 0\n        }\n    ],\n    \"success\": true,\n    \"message\": \"You have successfully signed in\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Publish Article",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Yomicepa",
+							"type": "text"
+						},
+						{
+							"key": "summary",
+							"value": "A rising software company",
+							"type": "text"
+						},
+						{
+							"key": "body",
+							"value": "Yomicepa, located in Smouha is an amazing startup.",
+							"type": "text"
+						},
+						{
+							"key": "published_by",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/publish",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"publish"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Youssef Publishes an article about Yomicepa",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "Yomicepa",
+									"type": "text"
+								},
+								{
+									"key": "summary",
+									"value": "A rising software company",
+									"type": "text"
+								},
+								{
+									"key": "body",
+									"value": "Yomicepa, located in Smouha is an amazing startup.",
+									"type": "text"
+								},
+								{
+									"key": "published_by",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/publish",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"publish"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "47"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2f-RUcTBrE9wJdMH5kipNaP3g3G7Ac\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Jul 2024 02:43:51 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Article Published!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Add Tags to article",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "tag",
+							"value": "software",
+							"type": "text"
+						},
+						{
+							"key": "article_id",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/addTag",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"addTag"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "'software' tag is added to youssef's article",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "tag",
+									"value": "software",
+									"type": "text"
+								},
+								{
+									"key": "article_id",
+									"value": "4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/addTag",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"addTag"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "39"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"27-nfbf4Gorfge6gAIbubR/yko3l30\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Jul 2024 02:45:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Tag Added!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "View Article",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "article_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/viewFullArticle?article_id=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"viewFullArticle"
+					],
+					"query": [
+						{
+							"key": "article_id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "View full article by youssef",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "article_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/viewFullArticle?article_id=4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"viewFullArticle"
+							],
+							"query": [
+								{
+									"key": "article_id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "313"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"139-a6eVAFa+XA/gytQhWHJxMb6MpZ4\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Jul 2024 02:45:49 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"article\": {\n        \"id\": 4,\n        \"title\": \"Yomicepa\",\n        \"summary\": \"A rising software company\",\n        \"body\": \"Yomicepa, located in Smouha is an amazing startup.\",\n        \"viewers\": 1,\n        \"likes\": 0,\n        \"published_by\": 3,\n        \"published_on\": \"2024-07-07T22:00:00.000Z\"\n    },\n    \"message\": \"Article sent and number of viewers incremented for article and tags\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Like Article",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "article_id",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/likeArticle",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"likeArticle"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "like youssef's article",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "article_id",
+									"value": "4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/likeArticle",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"likeArticle"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "56"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"38-+k2PBEnMecLWArtDy/73UE0fQaw\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Jul 2024 02:46:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Number of likes incremented\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Follow Tag",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "tag",
+							"value": "software",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/followTag",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"followTag"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Youssef followed 'software' tag",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "tag",
+									"value": "software",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/followTag",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"followTag"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "65"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"41-MEpsErIsyu7KvnXCzaFuOaQyIMw\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Jul 2024 02:47:30 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"User followed this tag successfully!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Follow Publisher",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "mainUser",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "publisher",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/followPublisher",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"followPublisher"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Emad followed Youssef",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "mainUser",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "publisher",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/followPublisher",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"followPublisher"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "71"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"47-nxRdt1akwtFYb54jYJ9HzcL851U\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Jul 2024 02:48:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"User followed this publisher successfully!\"\n}"
+				},
+				{
+					"name": "can't follow as this publisher has 0 articles",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "mainUser",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "publisher",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/followPublisher",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"followPublisher"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "60"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3c-I23AjNEz9dp6Y8mnw0ufdJPnmBk\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Jul 2024 02:48:52 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Publisher does not have any published articles\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Display Feed",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/displayFeed?user_id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"displayFeed"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Display Feed",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/displayFeed?user_id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"displayFeed"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "972"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3cc-cu9eNoofOe1q9J1qbLe76M5j5DM\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Jul 2024 02:49:35 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"articlesWithRelevantTags\": [\n        {\n            \"id\": 2,\n            \"title\": \"Animals\",\n            \"summary\": \"Planet of Animals\",\n            \"body\": \"all mammals birsds 333\",\n            \"viewers\": 5,\n            \"likes\": 1,\n            \"published_by\": 1,\n            \"published_on\": \"2024-07-06T22:00:00.000Z\"\n        },\n        {\n            \"id\": 3,\n            \"title\": \"Animals\",\n            \"summary\": \"Planet of Animals\",\n            \"body\": \"all mammals birsds 1111111\",\n            \"viewers\": 0,\n            \"likes\": 0,\n            \"published_by\": 1,\n            \"published_on\": \"2024-07-06T22:00:00.000Z\"\n        }\n    ],\n    \"articlesWithMostPopularTags\": [\n        {\n            \"id\": 3,\n            \"title\": \"Animals\",\n            \"summary\": \"Planet of Animals\",\n            \"body\": \"all mammals birsds 1111111\",\n            \"viewers\": 0,\n            \"likes\": 0,\n            \"published_by\": 1,\n            \"published_on\": \"2024-07-06T22:00:00.000Z\"\n        },\n        {\n            \"id\": 2,\n            \"title\": \"Animals\",\n            \"summary\": \"Planet of Animals\",\n            \"body\": \"all mammals birsds 333\",\n            \"viewers\": 5,\n            \"likes\": 1,\n            \"published_by\": 1,\n            \"published_on\": \"2024-07-06T22:00:00.000Z\"\n        },\n        {\n            \"id\": 4,\n            \"title\": \"Yomicepa\",\n            \"summary\": \"A rising software company\",\n            \"body\": \"Yomicepa, located in Smouha is an amazing startup.\",\n            \"viewers\": 1,\n            \"likes\": 1,\n            \"published_by\": 3,\n            \"published_on\": \"2024-07-07T22:00:00.000Z\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Most Popular Tags",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/getNamesOfHighestVisitedTags",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"getNamesOfHighestVisitedTags"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Most Popular Tags",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/getNamesOfHighestVisitedTags",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"getNamesOfHighestVisitedTags"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "91"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"5b-R2ROod1NetK+6Saplj/ehbtaWac\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Jul 2024 02:50:03 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"tagNames\": [\n        {\n            \"name\": \"mammal\",\n            \"visited\": 5\n        },\n        {\n            \"name\": \"software\",\n            \"visited\": 1\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}
