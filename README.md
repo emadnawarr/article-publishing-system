@@ -1,5 +1,5 @@
 # article-publishing-system
-This repository contains the backend implementation for an article publishing platform similar to Medium. It provides API endpoints for user management, article publishing, tag following, and article feeds. This README file outlines how to set up and run the backend, important decisions made during implementation, and instructions for testing the APIs using Postman.
+This repository contains the backend implementation for an article publishing platform similar to Medium. It provides API endpoints for user management, article publishing, tag following, and article feeds. This README file outlines how to set up and run the backend, and instructions for testing the APIs using Postman.
 
 ## Prerequisites
 Before running the backend, ensure you have the following installed:
